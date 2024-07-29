@@ -1,13 +1,15 @@
-import React from 'react';
 import "./index.css";
 import Todo from "./components/Todo";
 
-
-const taskLists = props.tasks?.map((task) => (
-    <Todo id={task.id} name={task.name} completed={task.completed}/>
-));
-
-const App = (props.tasks) => {
+const App = (tasks) => {
+    const taskLists = tasks?.map((task) => (
+        <Todo
+            id={task.id}
+            name={task.name}
+            completed={task.completed}
+            key={task.id}
+        />
+    ));
     return (
         <div className="todoapp stack-large">
             <h1>TodoMatic</h1>
@@ -54,6 +56,6 @@ const App = (props.tasks) => {
             </ul>
         </div>
     );
-}
+};
 
 export default App;

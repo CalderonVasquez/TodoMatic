@@ -1,5 +1,4 @@
 
-import React from "react";
 
 const Todo = ({name, completed, id}) => {
     return (

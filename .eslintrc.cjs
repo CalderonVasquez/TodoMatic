@@ -20,7 +20,7 @@ module.exports = {
   },
   settings: {
     react: {
-      version: '18.2',
+      version: 'detect', // Automatically detect the React version
     },
   },
   plugins: ['react-refresh'],
